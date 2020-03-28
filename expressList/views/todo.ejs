@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Task Tracker!</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Permanent+Marker|Sigmar+One&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header>
+      <h1>Task Tracker!</h1>
+    </header>
+    <section class="displayInput">
+      <form id="listInput" action="/toDoList" method="post">
+        <input name="task" placeholder="Enter A Task" id="listItem" type="text">
+        <button type="submit" id="addToList" name="button">Add to List</button>
+      </form>
+    </section>
+    <section class="showList">
+      <ul id="addUl">
+        <% for(var i=0; i<tasksArray.length; i++) {%>
+          <li class="toDoList">
+            <span><%= tasksArray[i].task %></span>
+            <span><%= tasksArray[i].completed %></span>
+            <span class="trashCan"><i class="fa fa-trash" aria-hidden="true"></i></span>
+          </li>
+        <% } %>
+      </ul>
+
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

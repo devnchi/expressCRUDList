@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  text-align: center;
+  align-content: center;
+}
+body {
+  background-image: url("homeDesk.jpg");
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  display: inline;
+  margin-right: 5%;
+  font-size: 37px;
+  background-color: green;
+  font-weight: bold;
+  color: white;
+  padding: 1%;
+  font-family: "Sigmar One", cursive;
+}
+header {
+  width: 100%;
+  height: auto;
+  margin: 2%;
+  text-align: center;
+}
+form input {
+  margin-top: 3%;
+  margin-left: 3%;
+  color: green;
+}
+button {
+  color: white;
+  background-color: green;
+}
+.showList {
+  width: 100%;
+  font-size: 25px;
+  list-style-type: none;
+  margin-top: 2%;
+}
+.showList li {
+  list-style-type: none;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  color: white;
+  font-family: 'Gochi Hand', cursive;
+}
+.trashCan {
+  color: green;
+}
